@@ -88,13 +88,4 @@ while len(open_list) > 0:
     cost_min = min(est_total_cost)
     path.append(nodos[est_total_cost.index(cost_min)])
     open_list.append(nodos[est_total_cost.index(cost_min)])
-    
-    
-                
-                
-                
-            
-
-
-
-
+    # 1, 3, 4, 7, 10, 12
