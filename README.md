@@ -1,4 +1,4 @@
-# Juan Daniel Aranda Morales code samples
+# code samples
 
 ## Authors
 Juan Daniel Aranda Morales
