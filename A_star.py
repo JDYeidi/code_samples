@@ -29,7 +29,7 @@ class A_star():
         return unv_key
         
 
-    def main(self):
+    def visited_nodes(self):
         if self.edges != None and self.nodes != None:
             graph, heuristic_dic = create_graph(self.edges, self.nodes).main()
         elif self.graph != None:
@@ -97,4 +97,18 @@ class A_star():
                     del unvisited[current_node]
                     iteracion += 1
 
-        return visited 
+        return visited
+
+    def main(self):
+        #Obtenemos el camino
+        visited_nodes =  self.visited_nodes()
+        #Declaramos el nodo actual y el camino como el nodo objetivo
+        current_node = self.target_node
+        path = [self.target_node]
+        #Se itera en los nodos previos del diccionario de nodos visitados 
+        while current_node != self.start_node:
+            previous_node = visited_nodes[current_node][self.PREVIOUS]
+            path = [previous_node] + path
+            current_node = previous_node
+
+        return path
