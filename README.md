@@ -1,4 +1,4 @@
-# Algoritmo A estrella
+# A* Algorithm
 
 ## Authors
 Juan Daniel Aranda Morales
