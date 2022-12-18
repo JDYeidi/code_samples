@@ -10,7 +10,7 @@ graph = {
 heuristic_dic = {"A":10, "B":15, "C":5, "D":5, "E":10, "F":0}
 if __name__ == '__main__':
     #A_star(edges, nodes, graph)
-    path = A_star("A","F", graph = graph, heuristic_dic=heuristic_dic)
-    #path = A_star(1,12, edges='pathfinding/AStar/edges.csv', nodes='pathfinding/AStar/nodes.csv')
+    #path = A_star("A","F", graph = graph, heuristic_dic=heuristic_dic)
+    path = A_star(1,12, edges='pathfinding/AStar/edges.csv', nodes='pathfinding/AStar/nodes.csv')
     path = path.main()
     print(f"El camino más óptimo es el siguiente: {path}")
